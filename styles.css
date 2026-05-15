@@ -64,6 +64,8 @@ body {
 }
 
 .logo img {
+  position: relative;
+  top: -10px;
   height: 28px;
   width: auto;
   display: block;
