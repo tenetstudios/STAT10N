@@ -275,6 +275,7 @@ h1 {
   .logo img {
     height: 16px;
     margin-top: -8px;
+    margin-bottom: -18px;
   }
 
   .nav-links {
@@ -285,7 +286,7 @@ h1 {
   width: 100%;
   height: 100svh;
 
-  padding: 12px 22px 28px;
+  padding: 42px 22px 28px;
 
   display: flex;
   flex-direction: column;
