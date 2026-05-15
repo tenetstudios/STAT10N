@@ -242,3 +242,31 @@ body {
   z-index: 50;
   pointer-events: none;
 }
+.mobile-hero-image {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .hero-image {
+    display: none;
+  }
+
+  .mobile-hero-image {
+    display: block;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center bottom;
+  }
+
+  .hero-content {
+    padding: 86px 22px 0;
+  }
+
+  h1 {
+    font-size: 3.2rem;
+    line-height: 0.92;
+  }
+}
