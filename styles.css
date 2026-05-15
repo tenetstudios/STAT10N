@@ -219,3 +219,26 @@ h1 {
     text-align: center;
   }
 }
+html,
+body {
+  background: #000 !important;
+  overflow: hidden !important;
+}
+
+.hero {
+  background: #000 !important;
+  height: 100vh !important;
+  overflow: hidden !important;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -2px;
+  height: 4px;
+  background: #000;
+  z-index: 50;
+  pointer-events: none;
+}
