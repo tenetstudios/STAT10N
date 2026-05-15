@@ -250,17 +250,18 @@ h1 {
     object-fit: cover;
     object-position: 64% center;
     transform: scale(1.03);
+    filter: brightness(1.08);
   }
 
   .overlay {
     background:
       linear-gradient(
-        180deg,
-        rgba(0,0,0,0.90) 0%,
-        rgba(0,0,0,0.72) 28%,
-        rgba(0,0,0,0.22) 58%,
-        rgba(0,0,0,0.72) 100%
-      );
+      180deg,
+      rgba(0,0,0,0.78) 0%,
+      rgba(0,0,0,0.52) 24%,
+      rgba(0,0,0,0.08) 52%,
+      rgba(0,0,0,0.58) 100%
+    );
   }
 
   .nav {
