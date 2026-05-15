@@ -80,15 +80,34 @@
 
       <div class="hero-buttons">
 
-        <a href="#" class="primary-btn">
-          JOIN THE FIRST DROP
-        </a>
+  <form
+    class="waitlist-form"
+    action="https://formspree.io/f/mykorder"
+    method="POST"
+  >
+    <input
+      type="email"
+      name="email"
+      placeholder="Enter your email"
+      required
+    />
 
-        <a href="#" class="secondary-btn">
-          LEARN MORE →
-        </a>
+    <input
+      type="hidden"
+      name="_subject"
+      value="New STAT10N waitlist signup"
+    />
 
-      </div>
+    <button type="submit" class="primary-btn">
+      JOIN THE FIRST DROP
+    </button>
+  </form>
+
+  <a href="product.html" class="secondary-btn">
+    LEARN MORE →
+  </a>
+
+</div>
 
     </div>
 
