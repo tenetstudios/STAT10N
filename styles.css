@@ -895,3 +895,145 @@ h1 {
     padding: 90px 22px;
   }
 }
+/* FEATURES PAGE */
+
+.features-page {
+  min-height: 100vh;
+  background: #050505;
+  color: white;
+}
+
+.features-hero {
+  min-height: 82vh;
+  padding: 150px 52px 80px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.features-hero h1 {
+  max-width: 1050px;
+
+  font-size: clamp(4rem, 8vw, 8rem);
+  line-height: 0.88;
+  font-weight: 500;
+
+  margin-bottom: 34px;
+}
+
+.features-hero p {
+  max-width: 680px;
+
+  color: rgba(255,255,255,0.76);
+
+  font-size: 1.2rem;
+  line-height: 1.7;
+}
+
+.features-grid {
+  padding: 0 52px 120px;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+.feature-block {
+  min-height: 360px;
+
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 28px;
+
+  padding: 34px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255,255,255,0.06),
+      rgba(255,255,255,0.015)
+    );
+}
+
+.feature-block span {
+  display: block;
+
+  color: #cba68a;
+
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+
+  margin-bottom: 40px;
+}
+
+.feature-block h2 {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  line-height: 0.95;
+
+  margin-bottom: 18px;
+}
+
+.feature-block p {
+  max-width: 460px;
+
+  color: rgba(255,255,255,0.68);
+
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.features-strip {
+  margin: 0 52px 120px;
+  padding: 28px 0;
+
+  border-top: 1px solid rgba(255,255,255,0.12);
+  border-bottom: 1px solid rgba(255,255,255,0.12);
+
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+
+  color: rgba(255,255,255,0.78);
+
+  font-size: clamp(1.4rem, 3vw, 2.8rem);
+}
+
+@media (max-width: 900px) {
+  .features-hero {
+    min-height: auto;
+    padding: 120px 22px 70px;
+  }
+
+  .features-hero h1 {
+    font-size: clamp(3.3rem, 14vw, 5rem);
+  }
+
+  .features-hero p {
+    font-size: 1rem;
+  }
+
+  .features-grid {
+    padding: 0 22px 80px;
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .feature-block {
+    min-height: auto;
+    padding: 28px;
+    border-radius: 22px;
+  }
+
+  .feature-block span {
+    margin-bottom: 32px;
+  }
+
+  .features-strip {
+    margin: 0 22px 80px;
+
+    flex-direction: column;
+    gap: 16px;
+
+    font-size: 2rem;
+  }
+}
