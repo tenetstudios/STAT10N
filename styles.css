@@ -633,3 +633,143 @@ h1 {
     font-size: 1rem;
   }
 }
+/* GALLERY PAGE */
+
+.gallery-page {
+  min-height: 100vh;
+  background: #050505;
+  color: white;
+}
+
+.gallery-hero {
+  padding: 150px 52px 70px;
+  max-width: 1000px;
+}
+
+.gallery-hero h1 {
+  font-size: clamp(3.8rem, 7vw, 7rem);
+  line-height: 0.9;
+  font-weight: 500;
+  margin-bottom: 28px;
+}
+
+.gallery-hero p {
+  max-width: 620px;
+  color: rgba(255,255,255,0.72);
+  font-size: 1.12rem;
+  line-height: 1.7;
+}
+
+.gallery-grid {
+  padding: 0 52px 120px;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+.gallery-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 28px;
+  min-height: 520px;
+  background: #111;
+}
+
+.gallery-card.large {
+  min-height: 640px;
+}
+
+.gallery-card img {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  filter: brightness(0.82);
+  transition: 0.35s ease;
+}
+
+.gallery-card:hover img {
+  transform: scale(1.04);
+  filter: brightness(0.95);
+}
+
+.gallery-card div {
+  position: absolute;
+  left: 28px;
+  right: 28px;
+  bottom: 28px;
+  z-index: 2;
+}
+
+.gallery-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(0,0,0,0.05) 0%,
+      rgba(0,0,0,0.72) 100%
+    );
+}
+
+.gallery-card span {
+  display: block;
+  color: #d7af91;
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  margin-bottom: 12px;
+}
+
+.gallery-card h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.gallery-card p {
+  max-width: 420px;
+  color: rgba(255,255,255,0.76);
+  line-height: 1.55;
+}
+
+@media (max-width: 900px) {
+  .gallery-hero {
+    padding: 110px 22px 48px;
+  }
+
+  .gallery-hero h1 {
+    font-size: clamp(3rem, 13vw, 4.8rem);
+  }
+
+  .gallery-hero p {
+    font-size: 1rem;
+  }
+
+  .gallery-grid {
+    padding: 0 22px 80px;
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .gallery-card,
+  .gallery-card.large {
+    min-height: 480px;
+    border-radius: 22px;
+  }
+
+  .gallery-card div {
+    left: 22px;
+    right: 22px;
+    bottom: 22px;
+  }
+
+  .gallery-card h2 {
+    font-size: 1.7rem;
+  }
+}
