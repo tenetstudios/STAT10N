@@ -235,9 +235,8 @@ h1 {
   .hero {
     min-height: 100svh;
     height: auto;
+    overflow: hidden;
   }
-
-  /* swap to mobile image */
 
   .hero-image {
     display: none;
@@ -245,32 +244,30 @@ h1 {
 
   .mobile-hero-image {
     display: block;
-
     position: absolute;
     inset: 0;
-
     width: 100%;
     height: 100%;
-
     object-fit: cover;
-    object-position: 62% center;
-
-    transform: scale(1.08);
+    object-position: center top;
+    transform: scale(1);
   }
 
   .overlay {
     background:
       linear-gradient(
         180deg,
-        rgba(0,0,0,0.82) 0%,
-        rgba(0,0,0,0.55) 38%,
-        rgba(0,0,0,0.15) 68%,
-        rgba(0,0,0,0.6) 100%
+        rgba(0,0,0,0.92) 0%,
+        rgba(0,0,0,0.88) 18%,
+        rgba(0,0,0,0.48) 47%,
+        rgba(0,0,0,0.08) 63%,
+        rgba(0,0,0,0.82) 100%
       );
   }
 
   .nav {
-    padding: 18px 20px;
+    padding: 38px 24px 0;
+    align-items: center;
   }
 
   .logo {
@@ -278,54 +275,93 @@ h1 {
   }
 
   .logo img {
-    height: 18px;
+    height: 24px;
   }
 
   .nav-links {
     display: none;
   }
 
+  .mobile-top-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    top: 24px;
+    right: 74px;
+
+    padding: 15px 28px;
+
+    border: 1px solid #d7af91;
+    border-radius: 999px;
+
+    color: #d7af91;
+    text-decoration: none;
+
+    font-size: 0.82rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+  }
+
+  .mobile-menu-icon {
+    display: flex;
+    position: absolute;
+    top: 34px;
+    right: 24px;
+
+    width: 28px;
+    height: 22px;
+
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .mobile-menu-icon span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: white;
+    border-radius: 999px;
+  }
+
   .hero-content {
     width: 100%;
     min-height: 100svh;
 
-    padding:
-      110px
-      22px
-      120px;
+    padding: 185px 24px 70px;
 
     justify-content: flex-start;
-
     transform: none;
   }
 
   .eyebrow {
-    font-size: 0.7rem;
-    line-height: 1.6;
-    letter-spacing: 0.14em;
+    max-width: 260px;
 
-    max-width: 280px;
+    font-size: 0.85rem;
+    line-height: 1.65;
+    letter-spacing: 0.22em;
 
-    margin-bottom: 18px;
+    margin-bottom: 28px;
   }
 
   h1 {
-    font-size: clamp(4.2rem, 15vw, 5.5rem);
-    line-height: 0.9;
-    letter-spacing: -0.04em;
+    max-width: 370px;
 
-    max-width: 340px;
+    font-size: clamp(4.6rem, 17vw, 6rem);
+    line-height: 0.92;
+    letter-spacing: -0.055em;
 
-    margin-bottom: 24px;
+    margin-bottom: 34px;
   }
 
   .hero-text {
-    font-size: 1.02rem;
-    line-height: 1.65;
+    max-width: 355px;
 
-    max-width: 340px;
+    font-size: 1.18rem;
+    line-height: 1.55;
 
-    margin-bottom: 36px;
+    margin-bottom: 38px;
   }
 
   .hero-buttons {
@@ -334,22 +370,25 @@ h1 {
     flex-direction: column;
     align-items: flex-start;
 
-    gap: 18px;
+    gap: 22px;
   }
 
   .primary-btn {
     width: 100%;
 
-    text-align: center;
+    padding: 21px 24px;
 
-    padding: 18px 24px;
+    text-align: center;
 
     font-size: 1rem;
     border-radius: 18px;
   }
 
   .secondary-btn {
-    font-size: 1rem;
-    padding-left: 2px;
+    font-size: 1.05rem;
+    letter-spacing: 0.04em;
+
+    padding: 0 0 14px;
+    border-bottom: 1px solid rgba(255,255,255,0.35);
   }
 }
