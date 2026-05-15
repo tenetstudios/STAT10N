@@ -37,9 +37,42 @@
         </p>
 
         <div class="product-actions">
-          <a href="#" class="primary-btn">JOIN THE FIRST DROP</a>
-          <a href="#" class="secondary-btn">VIEW SPECS →</a>
-        </div>
+
+  <form
+    class="waitlist-form"
+    action="https://formspree.io/f/mykorder"
+    method="POST"
+  >
+    <input
+      type="email"
+      name="email"
+      placeholder="Enter your email"
+      required
+    />
+
+    <input
+      type="hidden"
+      name="_subject"
+      value="New STAT10N waitlist signup"
+    />
+
+    <input
+      type="hidden"
+      name="_redirect"
+      value="https://stat10n.com/thanks.html"
+    />
+
+    <button type="submit" class="primary-btn">
+      JOIN THE DROP
+    </button>
+
+  </form>
+
+  <a href="gallery.html" class="secondary-btn">
+    VIEW GALLERY →
+  </a>
+
+</div>
       </div>
 
       <div class="product-image-card">
