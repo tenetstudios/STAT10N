@@ -3,207 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>STAT10N</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      background: #000;
-      color: white;
-      font-family: Inter, Arial, sans-serif;
-      overflow-x: hidden;
-    }
-
-    .hero {
-      position: relative;
-      width: 100%;
-      height: 100vh;
-      min-height: 800px;
-      overflow: hidden;
-    }
-
-    .hero-image {
-      position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center;
-    }
-
-    .overlay {
-      position: absolute;
-      inset: 0;
-      background:
-        linear-gradient(
-          90deg,
-          rgba(0,0,0,0.82) 0%,
-          rgba(0,0,0,0.45) 35%,
-          rgba(0,0,0,0.15) 60%,
-          rgba(0,0,0,0.35) 100%
-        );
-    }
-
-    .nav {
-      position: relative;
-      z-index: 10;
-      width: 100%;
-      padding: 32px 60px;
-
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .logo {
-      font-size: 2rem;
-      letter-spacing: 0.35em;
-      font-weight: 300;
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 42px;
-      align-items: center;
-    }
-
-    .nav-links a {
-      text-decoration: none;
-      color: rgba(255,255,255,0.85);
-      font-size: 0.95rem;
-      letter-spacing: 0.08em;
-      transition: 0.2s ease;
-    }
-
-    .nav-links a:hover {
-      color: white;
-    }
-
-    .cta {
-      padding: 14px 26px;
-      border: 1px solid rgba(255,255,255,0.4);
-      border-radius: 999px;
-      backdrop-filter: blur(10px);
-    }
-
-    .hero-content {
-      position: relative;
-      z-index: 10;
-
-      width: 100%;
-      max-width: 1400px;
-
-      margin: 0 auto;
-      padding: 120px 60px;
-
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      height: calc(100vh - 120px);
-    }
-
-    .eyebrow {
-      color: #cba68a;
-      font-size: 0.9rem;
-      letter-spacing: 0.18em;
-      margin-bottom: 28px;
-      text-transform: uppercase;
-    }
-
-    h1 {
-      font-size: clamp(4rem, 8vw, 7rem);
-      line-height: 0.92;
-      max-width: 700px;
-      font-weight: 500;
-      margin-bottom: 36px;
-    }
-
-    .hero-text {
-      max-width: 520px;
-      font-size: 1.25rem;
-      line-height: 1.7;
-      color: rgba(255,255,255,0.82);
-      margin-bottom: 44px;
-    }
-
-    .hero-buttons {
-      display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-
-    .primary-btn {
-      background: #d7af91;
-      color: black;
-      text-decoration: none;
-      padding: 18px 34px;
-      border-radius: 14px;
-      font-weight: 600;
-      transition: 0.2s ease;
-    }
-
-    .primary-btn:hover {
-      transform: translateY(-2px);
-    }
-
-    .secondary-btn {
-      color: white;
-      text-decoration: none;
-      padding: 18px 10px;
-      font-weight: 500;
-      border-bottom: 1px solid rgba(255,255,255,0.35);
-    }
-
-    @media (max-width: 900px) {
-
-      .nav {
-        padding: 24px;
-      }
-
-      .nav-links {
-        display: none;
-      }
-
-      .hero-content {
-        padding: 100px 24px;
-        justify-content: flex-start;
-      }
-
-      h1 {
-        font-size: 3.8rem;
-      }
-
-      .hero-text {
-        font-size: 1rem;
-      }
-
-      .hero {
-        min-height: 100svh;
-      }
-
-      .hero-image {
-        object-position: 68% center;
-      }
-
-      .overlay {
-        background:
-          linear-gradient(
-            180deg,
-            rgba(0,0,0,0.65) 0%,
-            rgba(0,0,0,0.55) 30%,
-            rgba(0,0,0,0.3) 100%
-          );
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
@@ -219,9 +22,10 @@
     <div class="overlay"></div>
 
     <nav class="nav">
-     <div class="logo">
-  <img src="assets/logo.png" alt="STAT10N Logo">
-</div>
+
+      <div class="logo">
+        <img src="assets/logo.png" alt="STAT10N Logo">
+      </div>
 
       <div class="nav-links">
         <a href="#">PRODUCT</a>
@@ -229,8 +33,11 @@
         <a href="#">GALLERY</a>
         <a href="#">ABOUT</a>
 
-        <a href="#" class="cta">JOIN THE DROP</a>
+        <a href="#" class="cta">
+          JOIN THE DROP
+        </a>
       </div>
+
     </nav>
 
     <div class="hero-content">
@@ -253,6 +60,7 @@
       </p>
 
       <div class="hero-buttons">
+
         <a href="#" class="primary-btn">
           JOIN THE FIRST DROP
         </a>
@@ -260,11 +68,14 @@
         <a href="#" class="secondary-btn">
           LEARN MORE →
         </a>
+
       </div>
 
     </div>
 
   </section>
+
+  <script src="script.js"></script>
 
 </body>
 </html>
