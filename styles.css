@@ -20,6 +20,7 @@ body {
 .hero {
   width: 100vw;
   height: 100vh;
+  max-height: 100vh;
   display: flex;
   position: relative;
   overflow: hidden;
@@ -89,7 +90,8 @@ body {
   z-index: 5;
   width: 44%;
   height: 100vh;
-  padding: 120px 0 60px 52px;
+  height: auto;
+  padding: 100px 0 40px 52px;
   display: flex;
   flex-direction: column;
   justify-content: center;
