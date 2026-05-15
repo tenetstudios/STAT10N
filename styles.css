@@ -773,3 +773,125 @@ h1 {
     font-size: 1.7rem;
   }
 }
+/* ABOUT PAGE */
+
+.about-page {
+  min-height: 100vh;
+  background: #050505;
+  color: white;
+}
+
+.about-hero {
+  min-height: 82vh;
+  padding: 150px 52px 80px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-hero h1 {
+  max-width: 1000px;
+
+  font-size: clamp(4rem, 8vw, 8rem);
+  line-height: 0.9;
+  font-weight: 500;
+
+  margin-bottom: 34px;
+}
+
+.about-hero p {
+  max-width: 680px;
+
+  color: rgba(255,255,255,0.76);
+
+  font-size: 1.2rem;
+  line-height: 1.7;
+}
+
+.about-manifesto {
+  padding: 0 52px 120px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.about-manifesto div {
+  border-top: 1px solid rgba(255,255,255,0.14);
+  padding-top: 26px;
+}
+
+.about-manifesto span {
+  display: block;
+
+  color: #cba68a;
+
+  font-size: 0.76rem;
+  letter-spacing: 0.14em;
+
+  margin-bottom: 18px;
+}
+
+.about-manifesto h2 {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.about-manifesto p {
+  color: rgba(255,255,255,0.68);
+  line-height: 1.6;
+}
+
+.about-cta {
+  padding: 120px 52px;
+
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(215,175,145,0.12),
+      transparent 42%
+    ),
+    #000;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.about-cta h2 {
+  font-size: clamp(3rem, 7vw, 6rem);
+  line-height: 0.92;
+
+  margin-bottom: 34px;
+}
+
+.about-cta .waitlist-form {
+  justify-content: center;
+}
+
+@media (max-width: 900px) {
+  .about-hero {
+    min-height: auto;
+    padding: 120px 22px 70px;
+  }
+
+  .about-hero h1 {
+    font-size: clamp(3.3rem, 14vw, 5rem);
+  }
+
+  .about-hero p {
+    font-size: 1rem;
+  }
+
+  .about-manifesto {
+    padding: 0 22px 80px;
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .about-cta {
+    padding: 90px 22px;
+  }
+}
