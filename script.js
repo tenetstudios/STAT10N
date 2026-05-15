@@ -1,13 +1,21 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-  const hero = document.querySelector(".hero");
   const heroImage = document.querySelector(".hero-image");
 
-  window.addEventListener("scroll", () => {
-    const scrollY = window.scrollY;
+  /* DESKTOP PARALLAX */
 
-    heroImage.style.transform = `scale(1.05) translateY(${scrollY * 0.08}px)`;
-  });
+  if (heroImage && window.innerWidth > 900) {
+
+    window.addEventListener("scroll", () => {
+      const scrollY = window.scrollY;
+
+      heroImage.style.transform =
+        `scale(1.02) translateY(${scrollY * 0.08}px)`;
+    });
+
+  }
+
+  /* BUTTON HOVER */
 
   const buttons = document.querySelectorAll(
     ".primary-btn, .secondary-btn, .cta"
@@ -24,5 +32,28 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
   });
+
+  /* MOBILE MENU */
+
+  const menuToggle = document.querySelector(".mobile-menu-toggle");
+  const mobileMenu = document.querySelector(".mobile-menu");
+
+  if (menuToggle && mobileMenu) {
+
+    menuToggle.addEventListener("click", () => {
+      mobileMenu.classList.toggle("open");
+    });
+
+    const mobileLinks = mobileMenu.querySelectorAll("a");
+
+    mobileLinks.forEach((link) => {
+
+      link.addEventListener("click", () => {
+        mobileMenu.classList.remove("open");
+      });
+
+    });
+
+  }
 
 });
